@@ -1,1 +1,2 @@
-#!/bin/bashnecho pwd
+#!/bin/bash
+pwd
