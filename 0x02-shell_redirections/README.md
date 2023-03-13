@@ -1,1 +1,1 @@
-Write a script that displays the third line of the file iacta
+ls -la command result into ls_cwd_content
