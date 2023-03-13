@@ -1,2 +1,2 @@
 #!/bin/bash
-egrep -w "bin" --count /etc/passwd
+egrep -w "bin" -c /etc/passwd
