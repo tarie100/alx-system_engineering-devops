@@ -1,2 +1,2 @@
 #!/bin/bash
-Find . -mindepth 1 -type d | wc -l
+Find . -type d -not -name '.' | wc -l
