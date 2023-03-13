@@ -1,2 +1,2 @@
 #!/bin/bash
-ls --users
+ls -la --users
