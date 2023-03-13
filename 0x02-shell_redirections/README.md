@@ -1,1 +1,1 @@
-Display all the lines starting with a letter
+Write a script that reverse its input
