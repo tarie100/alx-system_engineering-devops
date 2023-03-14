@@ -1,3 +1,3 @@
 #!/bin/bash
-echo $(cut -cl | tr -d "\n")
+echo -ne $(cut -c-l | tr -d '\n')'\n'
 
