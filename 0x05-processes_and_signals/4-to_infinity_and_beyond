@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #displays a sring indefinitely
+#sleep 2 in between loops
 while true; do
     echo "To infinity and beyond!"
     sleep 2
