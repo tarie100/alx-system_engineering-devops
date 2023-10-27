@@ -3,6 +3,9 @@
 processes=$(pgrep -l bash)
 
 # Display the PID and process name of the matching processes
-echo "---- Processes with 'bash' ----"
-echo "$processes"
-echo "-------------------------------"
+for process in $processes; do
+	proc_name = $(cat/proc/
+$process/cmdline | tr '\0' ' ')
+	echo "PID: $pid, Process
+Name: $proc_name"
+done
