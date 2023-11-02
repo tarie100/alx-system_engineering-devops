@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+nc -l -p 98 -s 127.0.0.1
