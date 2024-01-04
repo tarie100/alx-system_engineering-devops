@@ -1,9 +1,6 @@
 #create a manifest that kills a process named killmenow
-exec { 'killmeno':
-command => 'pkill
-killmenow',
-onlyif => 'pgrep
-killmenow',
-path => ['/bin', '/usr/bin'],
-refreshonly => true,
+exec { 'killmenow':
+  command => 'pkill killmenow',
+  path    => '/usr/bin:/usr/sbin:/bin:/sbin',
+  onlyif  => 'pgrep killmenow',
 }
