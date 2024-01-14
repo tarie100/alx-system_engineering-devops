@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
-# fix short and sweet
-if ! command -v nginx &> /dev/null; then
-    apt update
-    apt install nginx -y
-fi
-
-systemctl stop apache2
-
-grep -q 'listen 80' /etc/nginx/sites-available/default || sed -i 's/listen 80 default_server;/listen 80;/g' /etc/nginx/sites-available/default && systemctl reload nginx
+# script of task 0 but using less lines
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
+kill "$(pgrep 'nginx' | head -1)"
