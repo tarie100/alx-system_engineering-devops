@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# fix short and sweet.
 apt-get update
 apt-get install -y nginx
 service nginx stop
