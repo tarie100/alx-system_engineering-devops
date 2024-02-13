@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-import requests
 """
   Recursively fetches the titles of the hot posts from a subreddit.
 """
+import requests
+
 
 def recurse(subreddit, hot_list=None):
     if hot_list is None:
