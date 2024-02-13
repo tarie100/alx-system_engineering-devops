@@ -6,6 +6,20 @@ import requests
 
 
 def recurse(subreddit, hot_list=None):
+     """
+    Recursively fetches the titles of the hot posts from a subreddit.
+
+    Args:
+        subreddit (str): The name of the subreddit.
+        hot_list (list, optional): The list to store the hot post titles. Defaults to None.
+
+    Returns:
+        list: The list of hot post titles, or None if an error occurred.
+
+    Example:
+        >>> recurse("python")
+        ['Title 1', 'Title 2', 'Title 3']
+    """
     if hot_list is None:
         hot_list = []
     
