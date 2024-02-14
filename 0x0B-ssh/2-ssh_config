@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Edit or create the SSH client configuration file
+nano ~/.ssh/config
