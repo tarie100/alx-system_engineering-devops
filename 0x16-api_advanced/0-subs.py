@@ -6,7 +6,7 @@ function that queries the Reddit API and returns the number of subscribers
 
 import requests
 
-def search_results_redirect(query):
+def number_of_subscribers(subreddit):
     url = f"https://www.reddit.com/search?q={query}"
     headers = {'User-Agent': 'Your Custom User Agent'}
 
